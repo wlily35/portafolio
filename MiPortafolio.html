@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="/styles.css">
+    
+</head>
+<body>
+    <!--MENU ENCABEZADO-->  
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Willy</a>
+            </div>
+            <nav id="nav" >
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBER MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive"  onclick="mostrarOcultarMenu()">
+                <i class="uil uil-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!--SECCION DE INICIO--> 
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img class="mifoto" src="/imagenes portafolio/Imagen1.png" alt="mi foto de presentacion">
+            </div>
+            <h1>WILLIAM MARTINEZ</h1>
+            <h2>ESTUDIANTE INGENIERIA DE SOFTWARE</h2>
+            <div class="redes">
+                <a href="#"><i class="uil uil-github-alt"></i></a>
+                <a href="#"><i class="uil uil-instagram"></i></a>
+                <a href="#"><i class="uil uil-linkedin"></i></a>
+            </div>
+        </div>
+        
+    </section>
+    <!--SECCION SOBRE MI--> 
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola, soy William Martinez. </span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur corrupti at, ea voluptatem consequatur officiis aliquid suscipit ipsum recusandae 
+            cupiditate quae tempore eius deleniti quos libero beatae pariatur perspiciatis amet.</p>
+
+            <div class="fila">
+                <!--DATOS PERSONALES-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            22-10-1987
+                        </li>
+                        <li>
+                            <strong>Telefono</strong>
+                            317-084-53-56
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            wlily87@icloud.com
+                        </li>
+                        <li>
+                            <strong>Direccion</strong>
+                            Belen
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+                 <!--intereses-->
+                <div class="col">
+                    <h3>Hobbies</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-bicycle"></i>
+                            <span>RUTA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones-simple"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane-departure"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-motorcycle"></i>
+                            <span>MOTOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+    <!--SECCION skills--> 
+    <section id="skills" class="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!--tecnicos skills--> 
+                <div class="col">
+                    <h3>Tecnical Skills</h3>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skills">
+                            <div class="progreso">
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skills">
+                            <div class="progreso">
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>WORDPRESS</span>
+                        <div class="barra-skills">
+                            <div class="progreso">
+                                <span>15%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Github</span>
+                        <div class="barra-skills">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--PROFESIONAL skills--> 
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicacion</span>
+                        <div class="barra-skills">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skills">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skills">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicacion</span>
+                        <div class="barra-skills">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECCION CURRICULUM-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-section">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educacion</h3>
+                    <div class="item izq">
+                        <h4>Proyecto Oracle One </h4>
+                        <span class="casa">Alura Latam</span>
+                        <span class="fecha">2022-Nov 2013-Jun</span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Unde expedita eveniet aliquid. Laboriosam voluptate corrupti dicta consequuntur modi consectetur consequatur 
+                        ducimus dignissimos? Quas suscipit molestiae voluptatibus 
+                        animi quis soluta eius.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingenieria Desarrollo de Software </h4>
+                        <span class="casa">Universidad de Cundinamarca</span>
+                        <span class="fecha">2020 - En curso</span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Unde expedita eveniet aliquid. Laboriosam voluptate corrupti dicta consequuntur modi consectetur consequatur 
+                        ducimus dignissimos? Quas suscipit molestiae voluptatibus 
+                        animi quis soluta eius.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Tegnologia en Electricidad industrial</h4>
+                        <span class="casa">SENA</span>
+                        <span class="fecha">2010 - 2013</span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Unde expedita eveniet aliquid. Laboriosam voluptate corrupti dicta consequuntur modi consectetur consequatur 
+                        ducimus dignissimos? Quas suscipit molestiae voluptatibus 
+                        animi quis soluta eius.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Instituto Tecnologico de Mexico</span>
+                        <span class="fecha">2023 ene - jun</span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Unde expedita eveniet aliquid. Laboriosam voluptate corrupti dicta consequuntur modi consectetur consequatur 
+                        ducimus dignissimos? Quas suscipit molestiae voluptatibus 
+                        animi quis soluta eius.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Mesa Ayuda</h4>
+                        <span class="casa">Centros de control recaudo</span>
+                        <span class="fecha">2013 Oct- 2018</span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Unde expedita eveniet aliquid. Laboriosam voluptate corrupti dicta consequuntur modi consectetur consequatur 
+                        ducimus dignissimos? Quas suscipit molestiae voluptatibus 
+                        animi quis soluta eius.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Dulces Americandy</h4>
+                        <span class="casa">Tecnico de Campo</span>
+                        <span class="fecha">2013 Ene - Jun</span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Unde expedita eveniet aliquid. Laboriosam voluptate corrupti dicta consequuntur modi consectetur consequatur 
+                        ducimus dignissimos? Quas suscipit molestiae voluptatibus 
+                        animi quis soluta eius.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECCION PORTAFOLIO-->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>Portafolio</h2>
+            <div class="galeria">
+                <div class="proyectos">
+                    <img src="/imagenes portafolio/barberia.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Barberia</p>
+                    </div>
+                </div>
+                <div class="proyectos">
+                    <img src="/imagenes portafolio/frutasyfruto.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Frutas&Fruto</p>
+                    </div>
+                </div>
+                <div class="proyectos">
+                    <img src="/imagenes portafolio/appeperia.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Apepiria</p>
+                    </div>
+                </div>
+                <div class="proyectos">
+                    <img src="/imagenes portafolio/cursos.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Cursos</p>
+                    </div>
+                </div>
+                <div class="proyectos">
+                    <img src="/img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Cursos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- FORMULARIO-->
+                <div class="col">
+                    <input type="text" placeholder="Tu Nombre">
+                    <input type="text" placeholder="Tu Numero telefonico">
+                    <input type="text" placeholder="Direccion de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="input" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- MAPA -->
+                <div class="col">
+                    <img src="/img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Mexico CMDX
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                Llamanos: (+57)317-084-5356
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: wlily87@icloud.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="uil uil-github-alt"></i></a>
+            <a href="#"><i class="uil uil-instagram"></i></a>
+            <a href="#"><i class="uil uil-linkedin"></i></a>
+        </div>
+    </footer>
+    <script src="/validador.js"></script>
+</body>
+</html>
