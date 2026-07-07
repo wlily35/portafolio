@@ -61,8 +61,14 @@ html{
 /*inicio*/
 
 .inicio {
-    background: linear-gradient(to top, rgba(20,20,20,.8), rgba(20,20,20,1)),url(img/fondo.jpg);
-    background-size: cover;
+    background:
+        radial-gradient(circle at 20% 25%, rgba(255,107,0,.30), transparent 38%),
+        radial-gradient(circle at 85% 75%, rgba(255,107,0,.22), transparent 42%),
+        linear-gradient(to top, rgba(20,20,20,.85), rgba(20,20,20,.95)),
+        url(img/fondo.jpg);
+    background-size: 180% 180%, 180% 180%, cover, cover;
+    background-position: 0% 0%, 100% 100%, center, center;
+    animation: glowShift 16s ease-in-out infinite;
     height: 100vh;
     color: #fff;
     display: flex;
@@ -724,6 +730,7 @@ footer .arriba{
     background:#FF6B00;
     transform:rotate(24deg);
     z-index:1;
+    animation: flotar1 9s ease-in-out infinite;
 }
 .inicio::after{
     content:"";
@@ -736,6 +743,7 @@ footer .arriba{
     opacity:.55;
     transform:rotate(24deg);
     z-index:1;
+    animation: flotar2 11s ease-in-out infinite;
 }
 .inicio .contenido-banner{
     position:relative;
@@ -754,4 +762,33 @@ footer .arriba{
     background:#FF6B00;
     margin:12px auto 0;
     transform:skewX(-20deg);
+}
+
+
+/* ===== ANIMACIONES NOVEDOSAS DEL INICIO ===== */
+@keyframes glowShift{
+    0%,100%{ background-position: 0% 0%, 100% 100%, center, center; }
+    50%{ background-position: 70% 40%, 30% 60%, center, center; }
+}
+@keyframes flotar1{
+    0%,100%{ transform: rotate(24deg) translateY(0); }
+    50%{ transform: rotate(24deg) translateY(35px); }
+}
+@keyframes flotar2{
+    0%,100%{ transform: rotate(24deg) translateY(0); }
+    50%{ transform: rotate(24deg) translateY(-35px); }
+}
+.inicio .contenido-banner{
+    animation: aparecer 1.2s ease both;
+}
+@keyframes aparecer{
+    from{ opacity:0; transform: translateY(35px); }
+    to{ opacity:1; transform: translateY(0); }
+}
+.inicio .contenido-banner img{
+    animation: pulso 3s ease-in-out infinite;
+}
+@keyframes pulso{
+    0%,100%{ box-shadow: 0 0 0 rgba(255,107,0,.4); }
+    50%{ box-shadow: 0 0 40px rgba(255,107,0,.75); }
 }
